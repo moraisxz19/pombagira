@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo das Pombas Giras</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(180deg,#050505,#150008,#260010);
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:4rem;
+    color:#ff0055;
+    text-shadow:0 0 20px #ff0055;
+    font-family:'Cinzel',serif;
+}
+
+header p{
+    max-width:700px;
+    margin-top:20px;
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff0055;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#ff4d88;
+    font-family:'Cinzel',serif;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:25px;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#ff0055;
+}
+
+.card h3{
+    color:#ff4d88;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+}
+
+.rosa{
+    position:fixed;
+    font-size:20px;
+    color:#ff0055;
+    animation:cair linear infinite;
+    pointer-events:none;
+}
+
+@keyframes cair{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<h1>🌹 Universo das Pombas Giras 🌹</h1>
+
+<p>
+Site informativo sobre algumas das Pombas Giras mais conhecidas nas tradições afro-brasileiras.
+As descrições podem variar entre diferentes casas e tradições religiosas.
+</p>
+
+<button class="btn" onclick="document.getElementById('entidades').scrollIntoView({behavior:'smooth'})">
+Explorar
+</button>
+
+</header>
+
+<section>
+
+<h2 class="titulo">O Que é Pomba Gira?</h2>
+
+<p style="max-width:900px;margin:auto;text-align:center;line-height:1.8;">
+Pomba Gira é uma entidade espiritual presente em diversas tradições afro-brasileiras.
+Costuma ser associada à força feminina, autoestima, independência, proteção e desenvolvimento pessoal.
+Cada falange possui características próprias e diferentes formas de atuação conforme a tradição seguida.
+</p>
+
+</section>
+
+<section id="entidades">
+
+<h2 class="titulo">Principais Pombas Giras</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Maria Padilha</h3>
+<p>
+Uma das mais conhecidas. Frequentemente associada à elegância, força, liderança e autoconfiança.
+</p>
+</div>
+
+<div class="card">
+<h3>Maria Mulambo</h3>
+<p>
+Tradicionalmente relacionada à superação, acolhimento e transformação de momentos difíceis.
+</p>
+</div>
+
+<div class="card">
+<h3>Sete Saias</h3>
+<p>
+Conhecida pela personalidade marcante e simbolismo ligado à liberdade e determinação.
+</p>
+</div>
+
+<div class="card">
+<h3>Rosa Caveira</h3>
+<p>
+Figura associada à renovação, coragem e enfrentamento de desafios.
+</p>
+</div>
+
+<div class="card">
+<h3>Cigana</h3>
+<p>
+Relacionada à prosperidade, intuição, caminhos e liberdade de escolha.
+</p>
+</div>
+
+<div class="card">
+<h3>Dama da Noite</h3>
+<p>
+Tradicionalmente ligada aos mistérios da noite, reflexão e autoconhecimento.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Curiosidades</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌹 Símbolos</h3>
+<p>
+Rosas, espelhos, joias, perfumes e vestidos costumam aparecer em representações simbólicas.
+</p>
+</div>
+
+<div class="card">
+<h3>🔥 Cores</h3>
+<p>
+Vermelho, preto, dourado e vinho são cores frequentemente associadas a diversas falanges.
+</p>
+</div>
+
+<div class="card">
+<h3>✨ Diversidade</h3>
+<p>
+As características das entidades podem variar bastante entre diferentes tradições religiosas.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Universo das Pombas Giras • Site Informativo</p>
+
+</footer>
+
+<script>
+
+function criarRosa(){
+
+    const rosa=document.createElement("div");
+
+    rosa.classList.add("rosa");
+
+    rosa.innerHTML="🌹";
+
+    rosa.style.left=Math.random()*100+"vw";
+
+    rosa.style.animationDuration=
+    (Math.random()*5+5)+"s";
+
+    rosa.style.opacity=Math.random();
+
+    rosa.style.fontSize=
+    (Math.random()*20+15)+"px";
+
+    document.body.appendChild(rosa);
+
+    setTimeout(()=>{
+        rosa.remove();
+    },10000);
+}
+
+setInterval(criarRosa,400);
+
+</script>
+
+</body>
+</html>
